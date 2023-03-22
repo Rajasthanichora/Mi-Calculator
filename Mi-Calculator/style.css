@@ -1,0 +1,128 @@
+/* !font start */
+@font-face {
+  font-family: myffont;
+  src: url(FONTS/RobotoCondensed-Regular.ttf);
+}
+* {
+  font-family: myffont;
+}
+/* !font end */
+/* ! html & body start */
+html {
+  height: 100%;
+}
+body {
+  height: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  background-repeat: no-repeat;
+}
+/* ! html & body end */
+/* convert section start  */
+#convertsection {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  width: 293px;
+  min-height: 621px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 20px;
+}
+/* convert section end  */
+/* ! ad start */
+.advertisement {
+  height: 15%;
+  width: 90%;
+  background-color: #ff0000;
+  margin: 3px;
+}
+/* ! screen start */
+.screen-section {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.screen-section input {
+  width: 256.3px;
+  margin: 0px 10px 0px 14px;
+  border: none;
+  height: 130px;
+}
+/* ! screen end */
+/* ! HR line break start */
+hr {
+  width: 90%;
+  height: 1px;
+  border: none;
+  background-color: #eeecec;
+  margin: 0;
+}
+/* ! HR line break end */
+/* ! button start */
+.button-section {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keypad {
+  height: 90%;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.keybutton {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  font-size: 30px;
+}
+.keybutton:hover {
+  background-color: rgb(238, 238, 238);
+  border-radius: 50%;
+}
+.keyrow {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* ? special buttons */
+.specislbtn{
+  color: #fd8d3b;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* ? equal buttun start ==== */
+#equalbtn{
+  color: white;
+  background-color: #ca5d0e;
+  width: 50px;
+}
+#equalbtn:hover{
+transform: scale(0.9);
+transition: 0.1s;
+}
+/* ? equal buttun end ==== */
+/* ? AC buttun start ACAC */
+#Acbuttun{
+  font-size: 25px;
+}
+/* ? AC buttun start end */
+
+/* ! button end */
+
+

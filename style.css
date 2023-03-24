@@ -3,6 +3,10 @@
   font-family: myffont;
   src: url(FONTS/RobotoCondensed-Regular.ttf);
 }
+@font-face {
+  font-family: mmyfontss;
+  src: url(FONTS/VarelaRound-Regular.ttf);
+}
 * {
   font-family: myffont;
 }
@@ -38,9 +42,9 @@ body {
 /* ! ad start */
 .advertisement {
   height: 15%;
-  width: 90%;
-  background-color: #ff0000;
+  width: 97%;
   margin: 3px;
+  padding: 2px;
 }
 /* ! screen start */
 .screen-section {
@@ -50,11 +54,23 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.screen-section input {
+
+.screeninput1 input{
   width: 256.3px;
   margin: 0px 10px 0px 14px;
   border: none;
-  height: 130px;
+  height: 35px;
+  font-size: 55px;
+  /* direction: rtl; */
+}
+
+.screeninput2 input{
+  width: 256.3px;
+  margin: 0px 10px 0px 14px;
+  border: none;
+  height: 35px;
+  font-size: 28px;
+  /* direction: rtl; */
 }
 /* ! screen end */
 /* ! HR line break start */
@@ -105,6 +121,7 @@ hr {
 display: flex;
 justify-content: center;
 align-items: center;
+font-weight: bold;
 }
 /* ? equal buttun start ==== */
 #equalbtn{
@@ -119,10 +136,16 @@ transition: 0.1s;
 /* ? equal buttun end ==== */
 /* ? AC buttun start ACAC */
 #Acbuttun{
-  font-size: 25px;
+  font-size: 24px;
+  font-family: mmyfontss;
 }
 /* ? AC buttun start end */
 
 /* ! button end */
 
 
+#xoperator{
+
+display: none;
+
+}

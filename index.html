@@ -32,16 +32,26 @@
     <meta name="msapplication-TileColor" content="#2d89ef" />
     <meta name="theme-color" content="#ffffff" />
     <!-- ! favicon END -->
-    <script src="https://kit.fontawesome.com/d3bcc91e8b.js" crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <link rel="stylesheet" href="style.css" />
   <body>
     <div id="convertsection">
       <div class="screen-section">
-        <div class="advertisement"></div>
-
-        <div class="screen">
-          <input type="text" />
+        <div class="advertisement">
+          <iframe data-aa='2189776' src='//acceptable.a-ads.com/2189776' style='border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;'></iframe>
+        </div>
+        <div class="screeninputs">
+          <div class="screeninput1">
+            <input type="text" id="inputbox" />
+          </div>
+          <div class="screeninput2">
+            <input type="text" />
+          </div>
         </div>
       </div>
 
@@ -50,41 +60,51 @@
       <div class="button-section">
         <div class="keypad">
           <div class="keyrow">
-            <input type="button" value="AC" class="keybutton specislbtn" id="Acbuttun" />
-            <button class="keybutton specislbtn" >
-
-              <i class="fa-solid fa-delete-left fa-xs" style="color: #fd8d3b;"></i>
+            <input
+              type="button"
+              value="AC"
+              class="keybutton specislbtn"
+              id="Acbuttun"
+              onclick="Acbuttun()"
+            />
+            <button class="keybutton specislbtn" onclick="valuebuttun(this)" >
+              <span class="material-symbols-outlined"> backspace </span>
             </button>
-            <input type="button" value="%" class="keybutton specislbtn" />
-            <button class="keybutton specislbtn" >÷</button>
+            <input type="button" value="%" class="keybutton specislbtn" onclick="valuebuttun(this)" >
+            <input type="button" value="÷" class="keybutton" onclick="valuebuttun(this)" >
           </div>
 
           <div class="keyrow">
-            <input type="button" value="7" class="keybutton" />
-            <input type="button" value="8" class="keybutton" />
-            <input type="button" value="9" class="keybutton" />
-            <button class="keybutton specislbtn" >
-              <i class="fa-solid fa-xmark fa-xs" style="color: #fd8d3b;"></i></button>
+            <input type="button" value="7" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="8" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="9" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="×" class="keybutton" onclick="valuebuttun(this)" >
+          </div>
+          
+          <div class="keyrow">
+            <input type="button" value="4" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="5" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="6" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="-" class="keybutton" onclick="valuebuttun(this)" >
           </div>
 
           <div class="keyrow">
-            <input type="button" value="4" class="keybutton" />
-            <input type="button" value="5" class="keybutton" />
-            <input type="button" value="6" class="keybutton" />
-            <button class="keybutton specislbtn" >-</button>
-          </div>
+            <input type="button" value="1" class="keybutton"onclick="valuebuttun(this)" >
+            <input type="button" value="2" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="3" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="+" class="keybutton" onclick="valuebuttun(this)" >
 
-          <div class="keyrow">
-            <input type="button" value="1" class="keybutton" />
-            <input type="button" value="2" class="keybutton" />
-            <input type="button" value="3" class="keybutton" />
-            <button class="keybutton specislbtn" >+</button>
           </div>
           <div class="keyrow">
-            <button class="keybutton specislbtn" >@</button>
-            <input type="button" value="0" class="keybutton" />
-            <input type="button" value="." class="keybutton " />
-            <button class="keybutton specislbtn" id="equalbtn">=</button>
+            <button class="keybutton specislbtn"  >
+              <span class="material-symbols-outlined"> dark_mode </span>
+              <!-- <span class="material-symbols-outlined">
+                  light_mode
+                  </span> -->
+            </button>
+            <input type="button" value="0" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="." class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="=" class="keybutton" onclick="calculate()" >
           </div>
         </div>
       </div>

@@ -47,10 +47,10 @@
         </div>
         <div class="screeninputs">
           <div class="screeninput1">
-            <input type="text" id="inputbox" />
+            <input type="text" id="inputbox"/>
           </div>
           <div class="screeninput2">
-            <input type="text" />
+            <input type="text" id="inputbox2u" />
           </div>
         </div>
       </div>
@@ -65,34 +65,34 @@
               value="AC"
               class="keybutton specislbtn"
               id="Acbuttun"
-              onclick="Acbuttun()"
+              onclick="valuebuttun(this)"
             />
-            <button class="keybutton specislbtn" onclick="valuebuttun(this)" >
+            <button class="keybutton specislbtn" onclick="backspace(this)" >
               <span class="material-symbols-outlined"> backspace </span>
             </button>
             <input type="button" value="%" class="keybutton specislbtn" onclick="valuebuttun(this)" >
-            <input type="button" value="÷" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="÷" class="keybutton specislbtn" onclick="valuebuttun(this)" >
           </div>
 
           <div class="keyrow">
             <input type="button" value="7" class="keybutton" onclick="valuebuttun(this)" >
             <input type="button" value="8" class="keybutton" onclick="valuebuttun(this)" >
             <input type="button" value="9" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="×" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="&times;" class="keybutton specislbtn " onclick="valuebuttun(this)" >
           </div>
           
           <div class="keyrow">
             <input type="button" value="4" class="keybutton" onclick="valuebuttun(this)" >
             <input type="button" value="5" class="keybutton" onclick="valuebuttun(this)" >
             <input type="button" value="6" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="-" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="-" class="keybutton specislbtn " onclick="valuebuttun(this)" >
           </div>
 
           <div class="keyrow">
             <input type="button" value="1" class="keybutton"onclick="valuebuttun(this)" >
             <input type="button" value="2" class="keybutton" onclick="valuebuttun(this)" >
             <input type="button" value="3" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="+" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="+" class="keybutton specislbtn" onclick="valuebuttun(this)" >
 
           </div>
           <div class="keyrow">
@@ -104,7 +104,7 @@
             </button>
             <input type="button" value="0" class="keybutton" onclick="valuebuttun(this)" >
             <input type="button" value="." class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="=" class="keybutton" onclick="calculate()" >
+            <input type="button" value="=" class="keybutton" id="equalbtn" onclick="valuebuttun(this)" >
           </div>
         </div>
       </div>

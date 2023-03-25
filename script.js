@@ -1,31 +1,41 @@
 let input = document.getElementById("inputbox");
-let buttuns = document.querySelectorAll('.keybutton');
+// ! Keypad
+let buttuns = document.querySelectorAll(".keybutton");
+let input2 = document.getElementById("inputbox2u");
 
-// let string = ['']
+function valuebuttun(e) {
+  buttonText = e.value;
 
-// string = buttuns;
+  if (buttonText == "÷") {
+    buttonText = "/";
+    input.value += buttonText;
+    input.value = input.value;
+    // ! equal buttun
+  } else if (buttonText == "=") {
+    document
+      .getElementById("inputbox2u")
+      .setAttribute(
+        "style",
+        "font-size: 55px;  height: 40px; margin-bottom: 10px; transition: 0.4s; "
+      );
+    document
+      .getElementById("inputbox")
+      .setAttribute("style", "font-size: 28px;  height: 35px;");
 
-// document.addEventListener('click', function valuebuttun(e){
-
-
-
-
-
-// })
-
-
-
-function valuebuttun(e){
-
-input.value += e.value;
-}
-
-function Acbuttun(){
+    // !ac buttun
+  } else if (buttonText == "AC") {
     input.value = null;
+    document
+      .getElementById("inputbox2u")
+      .setAttribute("style", "color: white;");
+  } else if ((input.value += buttonText)) {
+    document
+      .getElementById("inputbox2u")
+      .setAttribute("style", "color: black;");
+  } else {
+    input.value += buttonText;
+    input.value = input.value;
+  }
+  input2.value = eval(input.value);
+  input2.value += "=";
 }
-
-
-function calculate(){
-    input.value =  eval(input.value)
-}
-

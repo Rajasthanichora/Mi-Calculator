@@ -59,9 +59,9 @@ body {
   width: 256.3px;
   margin: 0px 10px 0px 14px;
   border: none;
-  height: 35px;
+  height: 40px;
   font-size: 55px;
-  /* direction: rtl; */
+  direction: rtl;
 }
 
 .screeninput2 input{
@@ -70,7 +70,7 @@ body {
   border: none;
   height: 35px;
   font-size: 28px;
-  /* direction: rtl; */
+  direction: rtl;
 }
 /* ! screen end */
 /* ! HR line break start */
@@ -143,9 +143,3 @@ transition: 0.1s;
 
 /* ! button end */
 
-
-#xoperator{
-
-display: none;
-
-}

@@ -54,22 +54,22 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-
-.screeninput1 input{
+.screeninput1 input {
   width: 256.3px;
   margin: 0px 10px 0px 14px;
   border: none;
   height: 40px;
   font-size: 55px;
-  direction: rtl;
+  text-align: right;
 }
 
-.screeninput2 input{
+.screeninput2 input {
   width: 256.3px;
   margin: 0px 10px 0px 14px;
   border: none;
   height: 35px;
   font-size: 28px;
+  text-align: right;
   direction: rtl;
 }
 /* ! screen end */
@@ -114,32 +114,30 @@ hr {
   justify-content: space-around;
 }
 
-
 /* ? special buttons */
-.specislbtn{
+.specislbtn {
   color: #fd8d3b;
-display: flex;
-justify-content: center;
-align-items: center;
-font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 /* ? equal buttun start ==== */
-#equalbtn{
+#equalbtn {
   color: white;
   background-color: #ca5d0e;
   width: 50px;
 }
-#equalbtn:hover{
-transform: scale(0.9);
-transition: 0.1s;
+#equalbtn:hover {
+  transform: scale(0.9);
+  transition: 0.1s;
 }
 /* ? equal buttun end ==== */
 /* ? AC buttun start ACAC */
-#Acbuttun{
+#Acbuttun {
   font-size: 24px;
   font-family: mmyfontss;
 }
 /* ? AC buttun start end */
 
 /* ! button end */
-

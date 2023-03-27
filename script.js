@@ -1,6 +1,5 @@
 let input = document.getElementById("inputbox");
 // ! Keypad
-let buttuns = document.querySelectorAll(".keybutton");
 let input2 = document.getElementById("inputbox2u");
 
 function valuebuttun(e) {
@@ -83,3 +82,123 @@ function backspace() {
   input2.value = input2.value.slice(0, -1);
 }
 // ! backspace buttun end
+
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+/////////////////////////////////////////////////
+
+// ! Dark mode start
+function Darkmode() {
+  /////////////////////////////////////////////////
+  // ? numbers digits 1----9 start
+  var whiteclrbtn = document.querySelectorAll(".modebtn");
+  for (let i = 0; i < whiteclrbtn.length; i++) {
+    whiteclrbtn[i].style.color = "white";
+  }
+  // ? numbers digits 1----9 end
+  /////////////////////////////////////////////////
+  // !input color start
+  var blackclrbtn = document.querySelectorAll("input");
+  for (let i = 0; i < blackclrbtn.length; i++) {
+    blackclrbtn[i].style.backgroundColor = "black";
+  }
+  // * equal === buttun start
+  var darkinputs = document.getElementById("equalbtn");
+  darkinputs.addEventListener("click", clickdark);
+  function clickdark() {
+    document
+      .getElementById("inputbox2u")
+      .setAttribute(
+        "style",
+        "font-size: 55px;  height: 40px; margin-bottom: 10px; transition: 0.4s; "
+      );
+    document
+      .getElementById("inputbox")
+      .setAttribute("style", "font-size: 28px;  height: 35px;");
+    document.getElementById("inputbox").style.backgroundColor = "black";
+    document.getElementById("inputbox2u").style.backgroundColor = "black";
+    document.getElementById("inputbox2u").style.color = "white";
+    document.getElementById("inputbox").style.color = "white";
+    if (input2.value == "undefined=") {
+      document.getElementById("inputbox2u").style.color = "black";
+    }
+  }
+  // * equal === buttun end
+  // * all keysssss buttun start
+  var allkeysdarkinput = document.querySelectorAll(".keybutton");
+  for (let i = 0; i < allkeysdarkinput.length; i++) {
+    allkeysdarkinput[i].addEventListener("click", allkeysclickdrk);
+    function allkeysclickdrk() {
+      document.getElementById("inputbox").style.backgroundColor = "black";
+      document.getElementById("inputbox2u").style.backgroundColor = "black";
+      document.getElementById("inputbox2u").style.color = "white";
+      document.getElementById("inputbox").style.color = "white";
+      if (input2.value == "undefined=") {
+        document.getElementById("inputbox2u").style.color = "black";
+      }
+    }
+  }
+  // * all keysssss buttun end
+  // * AC buttun start
+  var acbtndarkinputs = document.getElementById("Acbuttun");
+  acbtndarkinputs.addEventListener("click", acclickdark);
+  function acclickdark() {
+    document.getElementById("inputbox").style.backgroundColor = "black";
+    document.getElementById("inputbox2u").style.backgroundColor = "black";
+    document.getElementById("inputbox2u").style.color = "black";
+    document.getElementById("inputbox").style.color = "black";
+    if (input2.value == "undefined=") {
+      document.getElementById("inputbox2u").style.color = "black";
+    }
+  }
+  // * Ac buttun end
+  // !input color end
+  /////////////////////////////////////////////////
+  //  ? convert section start
+  document.getElementById("convertsection").style.backgroundColor = "black";
+  document.getElementById("convertsection").style.border = "none";
+  //  ? convert section end
+  /////////////////////////////////////////////////
+  //  ? backspace buttun start
+  document.getElementById("modebacksace").style.backgroundColor = "black";
+  //  ? backspace buttun end
+  /////////////////////////////////////////////////
+  // * switch butttun dark && white
+  //  ? white mode buttun start
+  document.getElementById("lightbtnn").style.display = "contents";
+  //  ? white mode buttun end
+  /////////////////////////////////////////////////
+  //  ? dark mode buttun start
+  document.getElementById("darkbtnn").style.display = "none";
+  //  ? dark mode buttun end
+  /////////////////////////////////////////////////
+  //  ? dark mode --&&- white mode buttun start
+  document.getElementById("darkmodebtn").style.backgroundColor = "black";
+  //  ? dark mode --&&- white mode buttun end
+  // * switch butttun dark && white
+  /////////////////////////////////////////////////
+  //  ? equal buttun start
+  document.getElementById("equalbtn").style.backgroundColor = "#ca5d0e";
+  //  ? equal buttun end
+  /////////////////////////////////////////////////
+  // ? hover background effect start
+  var allkeys = document.querySelectorAll(".keybutton");
+  for (let i = 0; i < allkeys.length; i++) {
+    allkeys[i].addEventListener("mouseover", mouseOver);
+    allkeys[i].addEventListener("mouseout", mouseOut);
+    function mouseOver() {
+      allkeys[i].style.backgroundColor = "#222";
+    }
+    function mouseOut() {
+      allkeys[i].style.backgroundColor = "black";
+    }
+  }
+  // ? hover background effect end
+  /////////////////////////////////////////////////
+  if (input2.value == "undefined=") {
+    document.getElementById("inputbox2u").style.color = "black";
+  }
+}
+// ! Dark mode end
+

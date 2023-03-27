@@ -72,6 +72,9 @@ body {
   text-align: right;
   direction: rtl;
 }
+input[type=text]:focus {
+  outline: none;
+  }
 /* ! screen end */
 /* ! HR line break start */
 hr {
@@ -126,7 +129,12 @@ hr {
 #equalbtn {
   color: white;
   background-color: #ca5d0e;
-  width: 50px;
+  width: 55px;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  text-align: center;
+  padding: 11px;
 }
 #equalbtn:hover {
   transform: scale(0.9);
@@ -141,3 +149,7 @@ hr {
 /* ? AC buttun start end */
 
 /* ! button end */
+
+#lightbtnn{
+  display: none;
+}

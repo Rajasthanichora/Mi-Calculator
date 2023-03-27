@@ -31,10 +31,10 @@
         </div>
         <div class="screeninputs">
           <div class="screeninput1">
-            <input type="text" id="inputbox"/>
+            <input type="text" id="inputbox" class="modebtn" readonly />
           </div>
           <div class="screeninput2">
-            <input type="text" id="inputbox2u" />
+            <input type="text" id="inputbox2u" class="modebtn"  readonly>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
               id="Acbuttun"
               onclick="valuebuttun(this)"
             />
-            <button class="keybutton specislbtn" onclick="backspace(this)" >
+            <button class="keybutton specislbtn" id="modebacksace" onclick="backspace(this)" >
               <span class="material-symbols-outlined"> backspace </span>
             </button>
             <input type="button" value="%" class="keybutton specislbtn" onclick="valuebuttun(this)" >
@@ -59,36 +59,34 @@
           </div>
 
           <div class="keyrow">
-            <input type="button" value="7" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="8" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="9" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="7" class="keybutton modebtn" onclick="valuebuttun(this)" >
+            <input type="button" value="8" class="keybutton modebtn" onclick="valuebuttun(this)" >
+            <input type="button" value="9" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="&times;" class="keybutton specislbtn " onclick="valuebuttun(this)" >
           </div>
           
           <div class="keyrow">
-            <input type="button" value="4" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="5" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="6" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="4" class="keybutton modebtn" onclick="valuebuttun(this)" >
+            <input type="button" value="5" class="keybutton modebtn" onclick="valuebuttun(this)" >
+            <input type="button" value="6" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="-" class="keybutton specislbtn " onclick="valuebuttun(this)" >
           </div>
 
           <div class="keyrow">
-            <input type="button" value="1" class="keybutton"onclick="valuebuttun(this)" >
-            <input type="button" value="2" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="3" class="keybutton" onclick="valuebuttun(this)" >
+            <input type="button" value="1" class="keybutton modebtn"onclick="valuebuttun(this)" >
+            <input type="button" value="2" class="keybutton modebtn" onclick="valuebuttun(this)" >
+            <input type="button" value="3" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="+" class="keybutton specislbtn" onclick="valuebuttun(this)" >
 
           </div>
           <div class="keyrow">
-            <button class="keybutton specislbtn"  >
-              <span class="material-symbols-outlined"> dark_mode </span>
-              <!-- <span class="material-symbols-outlined">
-                  light_mode
-                  </span> -->
+            <button class="keybutton specislbtn " id="darkmodebtn" onclick="Darkmode(this)" >
+              <span class="material-symbols-outlined" id="darkbtnn" > dark_mode </span>
+              <span class="material-symbols-outlined" id="lightbtnn">light_mode</span>
             </button>
-            <input type="button" value="0" class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="." class="keybutton" onclick="valuebuttun(this)" >
-            <input type="button" value="=" class="keybutton" id="equalbtn" onclick="valuebuttun(this)" >
+            <input type="button" value="0" class="keybutton modebtn" onclick="valuebuttun(this)" >
+            <input type="button" value="." class="keybutton modebtn" onclick="valuebuttun(this)" >
+            <input type="button" value="=" id="equalbtn" onclick="valuebuttun(this)" >
           </div>
         </div>
       </div>

@@ -7,6 +7,27 @@
   font-family: mmyfontss;
   src: url(FONTS/VarelaRound-Regular.ttf);
 }
+:root{
+
+  --primary-color: white;
+  --secondary-color: rgb(238, 238, 238);
+  --third-color: #ca5d0e;
+  --input-backcolor: white;
+  --input-color: black;
+  --white-color: white;
+  --border-color: none;
+  }
+
+  .dark-theme{
+    --primary-color: black;
+    --secondary-color: #393939;
+    --third-color: #ca5d0e;
+    --input-backcolor: black;
+    --input-color: white;
+    --white-color: white;
+    --border-color: none;
+    }
+
 * {
   font-family: myffont;
 }
@@ -27,7 +48,7 @@ body {
 /* ! html & body end */
 /* convert section start  */
 #convertsection {
-  border: 1px solid #dadce0;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   width: 293px;
   min-height: 621px;
@@ -35,7 +56,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--primary-color);
   margin: 20px;
 }
 /* convert section end  */
@@ -109,7 +130,7 @@ hr {
   font-size: 30px;
 }
 .keybutton:hover {
-  background-color: rgb(238, 238, 238);
+  background-color: var(--secondary-color);
   border-radius: 50%;
 }
 .keyrow {
@@ -127,14 +148,15 @@ hr {
 }
 /* ? equal buttun start ==== */
 #equalbtn {
-  color: white;
-  background-color: #ca5d0e;
+  color:  var(--primary-color);
+  background-color: var(--third-color);
   width: 55px;
   border-radius: 50%;
   border: none;
   font-size: 30px;
   text-align: center;
   padding: 11px;
+  color: var(--white-color);
 }
 #equalbtn:hover {
   transform: scale(0.9);
@@ -153,3 +175,11 @@ hr {
 #lightbtnn{
   display: none;
 }
+
+
+
+
+input{
+  background-color: var(--input-backcolor);
+  color: var(--input-color);
+  }

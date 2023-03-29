@@ -7,8 +7,13 @@
   font-family: mmyfontss;
   src: url(FONTS/VarelaRound-Regular.ttf);
 }
-:root{
-
+* {
+  font-family: myffont;
+}
+/* !font end */
+/* ////////////////////////// */
+/* !color variable start */
+:root {
   --primary-color: white;
   --secondary-color: rgb(238, 238, 238);
   --third-color: #ca5d0e;
@@ -16,22 +21,18 @@
   --input-color: black;
   --white-color: white;
   --border-color: none;
-  }
-
-  .dark-theme{
-    --primary-color: black;
-    --secondary-color: #393939;
-    --third-color: #ca5d0e;
-    --input-backcolor: black;
-    --input-color: white;
-    --white-color: white;
-    --border-color: none;
-    }
-
-* {
-  font-family: myffont;
 }
-/* !font end */
+.dark-theme {
+  --primary-color: black;
+  --secondary-color: #393939;
+  --third-color: #ca5d0e;
+  --input-backcolor: black;
+  --input-color: white;
+  --white-color: white;
+  --border-color: none;
+}
+/* !color variable end */
+/* ////////////////////////// */
 /* ! html & body start */
 html {
   height: 100%;
@@ -46,12 +47,13 @@ body {
   background-repeat: no-repeat;
 }
 /* ! html & body end */
+/* ////////////////////////// */
 /* convert section start  */
 #convertsection {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   width: 293px;
-  min-height: 621px;
+  height: 621px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,6 +62,7 @@ body {
   margin: 20px;
 }
 /* convert section end  */
+/* ////////////////////////// */
 /* ! ad start */
 .advertisement {
   height: 15%;
@@ -67,6 +70,8 @@ body {
   margin: 3px;
   padding: 2px;
 }
+/* ! ad end */
+/* ////////////////////////// */
 /* ! screen start */
 .screen-section {
   height: 40%;
@@ -83,7 +88,6 @@ body {
   font-size: 55px;
   text-align: right;
 }
-
 .screeninput2 input {
   width: 256.3px;
   margin: 0px 10px 0px 14px;
@@ -93,10 +97,11 @@ body {
   text-align: right;
   direction: rtl;
 }
-input[type=text]:focus {
+input[type="text"]:focus {
   outline: none;
-  }
+}
 /* ! screen end */
+/* ////////////////////////// */
 /* ! HR line break start */
 hr {
   width: 90%;
@@ -106,6 +111,7 @@ hr {
   margin: 0;
 }
 /* ! HR line break end */
+/* ////////////////////////// */
 /* ! button start */
 .button-section {
   height: 60%;
@@ -137,8 +143,8 @@ hr {
   display: flex;
   justify-content: space-around;
 }
-
-/* ? special buttons */
+/* ////////////////////////// */
+/* ? special buttons start */
 .specislbtn {
   color: #fd8d3b;
   display: flex;
@@ -146,9 +152,11 @@ hr {
   align-items: center;
   font-weight: bold;
 }
+/* ? special buttons end */
+/* ////////////////////////// */
 /* ? equal buttun start ==== */
 #equalbtn {
-  color:  var(--primary-color);
+  color: var(--primary-color);
   background-color: var(--third-color);
   width: 55px;
   border-radius: 50%;
@@ -163,23 +171,65 @@ hr {
   transition: 0.1s;
 }
 /* ? equal buttun end ==== */
+/* ////////////////////////// */
 /* ? AC buttun start ACAC */
 #Acbuttun {
   font-size: 24px;
   font-family: mmyfontss;
 }
 /* ? AC buttun start end */
-
-/* ! button end */
-
-#lightbtnn{
+/* ////////////////////////// */
+/* ? DARK MODE BTN START */
+#lightbtnn {
   display: none;
 }
-
-
-
-
-input{
+/* ? DARK MODE BTN END */
+/* ! button end */
+/* ////////////////////////// */
+/* ! input start */
+input {
   background-color: var(--input-backcolor);
   color: var(--input-color);
+}
+/* ! input start */
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* ////////////////////////// */
+/* ////////////////////////// */
+
+/* ! RESPONSIVENESD */
+
+@media screen and (max-width: 500px) {
+  html {
+    height: 100%;
+    overflow: hidden;
   }
+  body {
+    height: auto;
+  }
+  #convertsection {
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    height: 102vh;
+    margin: -17px;
+    border: none;
+    border-radius: 0;
+  }
+  .advertisement {
+    height: 15%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .screeninput1 input {
+    width: 90vw;
+  }
+  .screeninput2 input {
+    width: 89vw;
+  }
+}
+/* ! RESPONSIVENESD */

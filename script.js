@@ -1,9 +1,10 @@
 let input = document.getElementById("inputbox");
-// ! Keypad
 let input2 = document.getElementById("inputbox2u");
-
+/////////////////////////////////////////////////
+// !click buttuns
 function valuebuttun(e) {
   buttonText = e.value;
+  /////////////////////////////////////////////////
   // ! oprator buttun start
   if (buttonText == "÷") {
     buttonText = "/";
@@ -14,61 +15,9 @@ function valuebuttun(e) {
     input.value += buttonText;
     input.value = input.value;
     // ! oprator buttun end
-    // ! equal buttun
-  } else if (buttonText == "=") {
-    document
-      .getElementById("inputbox2u")
-      .setAttribute(
-        "style",
-        "font-size: 55px;  height: 40px; margin-bottom: 10px; transition: 0.4s; "
-      );
-    document
-      .getElementById("inputbox")
-      .setAttribute("style", "font-size: 28px;  height: 35px;");
-    if (input2.value.length == 10) {
-      document.getElementById("inputbox2u").style.fontSize = "40px";
-    } else if (input2.value.length == 11) {
-      document.getElementById("inputbox2u").style.fontSize = "38px";
-    } else if (input2.value.length == 12) {
-      document.getElementById("inputbox2u").style.fontSize = "36px";
-    } else if (input2.value.length == 13) {
-      document.getElementById("inputbox2u").style.fontSize = "34px";
-    } else if (input2.value.length == 14) {
-      document.getElementById("inputbox2u").style.fontSize = "32px";
-    } else if (input2.value.length == 15) {
-      document.getElementById("inputbox2u").style.fontSize = "30px";
-    } else if (input2.value.length == 16) {
-      document.getElementById("inputbox2u").style.fontSize = "28px";
-    } else if (input2.value.length == 17) {
-      document.getElementById("inputbox2u").style.fontSize = "27px";
-    } else if (input2.value.length == 18) {
-      document.getElementById("inputbox2u").style.fontSize = "26px";
-    } else if (input2.value.length == 19) {
-      document.getElementById("inputbox2u").style.fontSize = "25px";
-    } else if (input2.value.length == 20) {
-      document.getElementById("inputbox2u").style.fontSize = "24px";
-    }
-    document.getElementById("inputbox2u").style.marginBottom = "6px";
-    if (input2.value == "undefined=") {
-      document.getElementById("inputbox2u").style.color = "white";
-      document.getElementById("inputbox2u").style.marginBottom = "6px";
-    }
-    // ! MY SIGNATURE START
-    if (input.value == "%6350%") {
-      alert("MADE BY『』𝑅𝒜𝒥𝒜𝒮𝒯𝐻𝒜𝒩𝐼 𝒞𝐻𝒪𝑅𝒜");
-      document.getElementById("inputbox2u").value =
-        "MADE BY『』𝑅𝒜𝒥𝒜𝒮𝒯𝐻𝒜𝒩𝐼 𝒞𝐻𝒪𝑅𝒜";
-      document.getElementById("inputbox").value = "🎀  𝒲𝐸𝐿𝒞♡𝑀𝐸  🎀";
-      document.getElementById("inputbox2u").style.fontSize = "15px";
-      document.getElementById("inputbox2u").style.color = "black";
-    }
-    // ! MY SIGNATURE START
-    // !ac buttun
+    /////////////////////////////////////////////////
+    // !Ac buttun start
   } else if (buttonText == "AC") {
-    input.value = null;
-    document
-      .getElementById("inputbox2u")
-      .setAttribute("style", "color: white;");
     document
       .getElementById("inputbox")
       .setAttribute("style", "font-size: 55px;  height: 40px;");
@@ -82,6 +31,8 @@ function valuebuttun(e) {
   }
   input2.value = eval(input.value);
   input2.value += "=";
+  // !Ac buttun end
+  /////////////////////////////////////////////////
   // ! Text overflow start
   // ? input 1 start
   if (input.value.length == 10) {
@@ -104,12 +55,15 @@ function valuebuttun(e) {
   }
   // ? input 2 end
   // ! Text overflow end
+  /////////////////////////////////////////////////
 }
+/////////////////////////////////////////////////
 // ! page reload start
 if (input2.value == "undefined=") {
   document.getElementById("inputbox2u").style.color = "white";
 }
 // ! page reload end
+/////////////////////////////////////////////////
 // ! backspace buttun start
 function backspace() {
   input.value = input.value.slice(0, -1);
@@ -117,10 +71,7 @@ function backspace() {
 }
 // ! backspace buttun end
 /////////////////////////////////////////////////
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-
+// ! DARK MODE START
 function Darklightmode() {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
@@ -144,3 +95,65 @@ function Darklightmode() {
     document.getElementById("lightbtnn").style.display = "none";
   }
 }
+// ! DARK MODE END
+/////////////////////////////////////////////////
+// !equal btn start
+document.getElementById("equalbtn").addEventListener("click", function () {
+  /////////////////////////////////////////////////
+  // ? input styling start
+  document
+    .getElementById("inputbox2u")
+    .setAttribute(
+      "style",
+      "font-size: 55px;  height: 40px; margin-bottom: 10px; transition: 0.4s; "
+    );
+  document
+    .getElementById("inputbox")
+    .setAttribute("style", "font-size: 28px;  height: 35px;");
+  document.getElementById("inputbox2u").style.marginBottom = "6px";
+  // ? input styling start
+  /////////////////////////////////////////////////
+  // ! MY SIGNATURE START
+  if (input.value == "%000%") {
+    alert("MADE BY『』𝙍𝘼𝙅𝘼𝙎𝙏𝙃𝘼𝙉𝙄 𝘾𝙃𝙊𝙍𝘼");
+    document.getElementById("inputbox2u").value = "MADE BY『』𝙍𝘼𝙅𝘼𝙎𝙏𝙃𝘼𝙉𝙄 𝘾𝙃𝙊𝙍𝘼";
+    document.getElementById("inputbox").value = "🎀  𝒲𝐸𝐿𝒞♡𝑀𝐸  🎀";
+    document.getElementById("inputbox2u").style.fontSize = "15px";
+    document.getElementById("inputbox2u").style.color = "black";
+  }
+  // ! MY SIGNATURE END
+  /////////////////////////////////////////////////
+  // ? equal click auto reset value btn start
+  if (input2.value == "undefined=") {
+    document.getElementById("Acbuttun").click();
+  }
+  // ? equal click auto reset value btn end
+  /////////////////////////////////////////////////
+  // ! fixx input2 text size start
+  if (input2.value.length == 10) {
+    document.getElementById("inputbox2u").style.fontSize = "40px";
+  } else if (input2.value.length == 11) {
+    document.getElementById("inputbox2u").style.fontSize = "38px";
+  } else if (input2.value.length == 12) {
+    document.getElementById("inputbox2u").style.fontSize = "36px";
+  } else if (input2.value.length == 13) {
+    document.getElementById("inputbox2u").style.fontSize = "34px";
+  } else if (input2.value.length == 14) {
+    document.getElementById("inputbox2u").style.fontSize = "32px";
+  } else if (input2.value.length == 15) {
+    document.getElementById("inputbox2u").style.fontSize = "30px";
+  } else if (input2.value.length == 16) {
+    document.getElementById("inputbox2u").style.fontSize = "28px";
+  } else if (input2.value.length == 17) {
+    document.getElementById("inputbox2u").style.fontSize = "27px";
+  } else if (input2.value.length == 18) {
+    document.getElementById("inputbox2u").style.fontSize = "26px";
+  } else if (input2.value.length == 19) {
+    document.getElementById("inputbox2u").style.fontSize = "25px";
+  } else if (input2.value.length == 20) {
+    document.getElementById("inputbox2u").style.fontSize = "24px";
+  }
+  // ! fixx input text2 size end
+  /////////////////////////////////////////////////
+});
+// !equal btn start

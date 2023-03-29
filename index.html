@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MI CALCULATOR</title>
+    <!-- /////////////////////////////////////////////////// -->
     <!-- ! favicon START -->
-
     <link rel="apple-touch-icon" sizes="180x180" href="MY-FAVICON/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="MY-FAVICON/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="MY-FAVICON/favicon-16x16.png">
@@ -14,22 +14,29 @@
     <link rel="mask-icon" href="MY-FAVICON/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
-  
     <!-- ! favicon END -->
-
+<!-- /////////////////////////////////////////////////// -->
+<!-- ! GOOGLE FONTS start  -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+      <!-- ! GOOGLE FONTS start  -->
+<!-- /////////////////////////////////////////////////// -->
   </head>
+  <!-- ? css start -->
   <link rel="stylesheet" href="style.css" />
+  <!-- ? css start -->
   <body>
     <div id="convertsection">
       <div class="screen-section">
+        <!-- ? ADVERTISEMENT START -->
         <div class="advertisement">
           <iframe data-aa='2189776' src='//acceptable.a-ads.com/2189776' style='border:0px; padding:0; width:100%; height:100%; overflow:hidden; background-color: transparent;'></iframe>
         </div>
+        <!-- ? ADVERTISEMENT END -->
+        <!-- ! SCREEN START -->
         <div class="screeninputs">
+          <form action="">
           <div class="screeninput1">
             <input type="text" id="inputbox" class="modebtn" readonly />
           </div>
@@ -37,47 +44,43 @@
             <input type="text" id="inputbox2u" class="modebtn"  readonly>
           </div>
         </div>
+        <!-- ! SCREEN END -->
       </div>
-
       <hr />
-
       <div class="button-section">
         <div class="keypad">
           <div class="keyrow">
             <input
-              type="button"
+              type="reset"
               value="AC"
               class="keybutton specislbtn"
               id="Acbuttun"
               onclick="valuebuttun(this)"
             />
+          </form>
             <button class="keybutton specislbtn" id="modebacksace" onclick="backspace(this)" >
               <span class="material-symbols-outlined"> backspace </span>
             </button>
             <input type="button" value="%" class="keybutton specislbtn" onclick="valuebuttun(this)" >
             <input type="button" value="÷" class="keybutton specislbtn" onclick="valuebuttun(this)" >
           </div>
-
           <div class="keyrow">
             <input type="button" value="7" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="8" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="9" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="&times;" class="keybutton specislbtn " onclick="valuebuttun(this)" >
           </div>
-          
           <div class="keyrow">
             <input type="button" value="4" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="5" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="6" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="-" class="keybutton specislbtn " onclick="valuebuttun(this)" >
           </div>
-
           <div class="keyrow">
             <input type="button" value="1" class="keybutton modebtn"onclick="valuebuttun(this)" >
             <input type="button" value="2" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="3" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="+" class="keybutton specislbtn" onclick="valuebuttun(this)" >
-
           </div>
           <div class="keyrow">
             <button class="keybutton specislbtn " id="darkmodebtn" onclick="Darklightmode(this)" >
@@ -86,11 +89,13 @@
             </button>
             <input type="button" value="0" class="keybutton modebtn" onclick="valuebuttun(this)" >
             <input type="button" value="." class="keybutton modebtn" onclick="valuebuttun(this)" >
-            <input type="button" value="=" id="equalbtn" onclick="valuebuttun(this)" >
+            <button id="equalbtn" onclick="valuebuttun(this)" >=</button>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
+<!-- ? JAVASCRIPT START -->
+<script src="script.js"></script>
+<!-- ? JAVASCRIPT START -->
 </html>

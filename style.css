@@ -209,13 +209,13 @@ input {
   }
   body {
     height: auto;
+    background: none;
   }
   #convertsection {
     width: 100vw;
     margin: 0;
     overflow: hidden;
-    height: 102vh;
-    margin: -17px;
+    height: 96vh;
     border: none;
     border-radius: 0;
   }

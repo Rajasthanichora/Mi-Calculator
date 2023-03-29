@@ -76,6 +76,7 @@ function Darklightmode() {
   document.body.classList.toggle("dark-theme");
   if (document.body.classList.contains("dark-theme")) {
     var eqauall = document.getElementById("equalbtn");
+    document.body.style.backgroundColor = "black";
     eqauall.addEventListener("click", function () {
       document.getElementById("inputbox2u").style.color = "white";
     });
@@ -93,6 +94,7 @@ function Darklightmode() {
   } else {
     document.getElementById("darkbtnn").style.display = "contents";
     document.getElementById("lightbtnn").style.display = "none";
+    document.body.style.backgroundColor = "white";
   }
 }
 // ! DARK MODE END

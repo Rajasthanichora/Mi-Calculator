@@ -107,7 +107,7 @@ document.getElementById("equalbtn").addEventListener("click", function () {
     .getElementById("inputbox2u")
     .setAttribute(
       "style",
-      "font-size: 55px;  height: 40px; margin-bottom: 10px; transition: 0.4s; "
+      "font-size: 55px;  height: 40px; margin-bottom: 10px; transition: 0.4s; color: black; "
     );
   document
     .getElementById("inputbox")
@@ -130,8 +130,8 @@ document.getElementById("equalbtn").addEventListener("click", function () {
     document.getElementById("inputbox2u").value = " THE SOUND『 IS 』COMING";
     document.getElementById("inputbox").value = "🎀  𝒲𝐸𝐿𝒞♡𝑀𝐸  🎀";
     document.getElementById("inputbox2u").style.fontSize = "20px";
-    var eaqualaudio = new Audio("SOUND_EFFECT/click sound btn.mp3");
-    var allclicks = new Audio("SOUND_EFFECT/all keys sound.mp3");
+    var eaqualaudio = new Audio("SOUND_EFFECT/clicksoundbtn.mp3");
+    var allclicks = new Audio("SOUND_EFFECT/allkeyssound.mp3");
     equalbtn.addEventListener("mousedown", () => {
       eaqualaudio.play();
     });

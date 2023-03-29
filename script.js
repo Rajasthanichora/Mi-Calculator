@@ -130,8 +130,8 @@ document.getElementById("equalbtn").addEventListener("click", function () {
     document.getElementById("inputbox2u").value = " THE SOUND『 IS 』COMING";
     document.getElementById("inputbox").value = "🎀  𝒲𝐸𝐿𝒞♡𝑀𝐸  🎀";
     document.getElementById("inputbox2u").style.fontSize = "20px";
-    var eaqualaudio = new Audio("/SOUND_EFFECT/click sound btn.mp3");
-    var allclicks = new Audio("/SOUND_EFFECT/all keys sound.mp3");
+    var eaqualaudio = new Audio("SOUND_EFFECT/click sound btn.mp3");
+    var allclicks = new Audio("SOUND_EFFECT/all keys sound.mp3");
     equalbtn.addEventListener("mousedown", () => {
       eaqualaudio.play();
     });

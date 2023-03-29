@@ -123,7 +123,26 @@ document.getElementById("equalbtn").addEventListener("click", function () {
     document.getElementById("inputbox2u").style.fontSize = "15px";
     document.getElementById("inputbox2u").style.color = "black";
   }
-  // ! MY SIGNATURE END
+    // ! MY SIGNATURE END
+      /////////////////////////////////////////////////
+  // ! CLICK sound effect start
+  if (input.value == "%%%") {
+    document.getElementById("inputbox2u").value = " THE SOUND『 IS 』COMING";
+    document.getElementById("inputbox").value = "🎀  𝒲𝐸𝐿𝒞♡𝑀𝐸  🎀";
+    document.getElementById("inputbox2u").style.fontSize = "20px";
+    var eaqualaudio = new Audio("/SOUND_EFFECT/click sound btn.mp3");
+    var allclicks = new Audio("/SOUND_EFFECT/all keys sound.mp3");
+    equalbtn.addEventListener("mousedown", () => {
+      eaqualaudio.play();
+    });
+    var soundbtn = document.querySelectorAll(".keybutton");
+    for (let i = 0; i < soundbtn.length; i++) {
+      soundbtn[i].addEventListener("mousedown", () => {
+        allclicks.play();
+      });
+    }
+  }
+// ! CLICK sound effect end
   /////////////////////////////////////////////////
   // ? equal click auto reset value btn start
   if (input2.value == "undefined=") {
@@ -159,3 +178,4 @@ document.getElementById("equalbtn").addEventListener("click", function () {
   /////////////////////////////////////////////////
 });
 // !equal btn start
+/////////////////////////////////////////////////

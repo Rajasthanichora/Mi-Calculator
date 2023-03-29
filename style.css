@@ -231,5 +231,16 @@ input {
   .screeninput2 input {
     width: 89vw;
   }
+  .keypad {
+    margin-bottom: 10px;
+  }
+  .keybutton:hover {
+    background: none;
+    border-radius: unset;
+  }
+  .keybutton:active {
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+  }
 }
 /* ! RESPONSIVENESD */
